@@ -79,3 +79,12 @@ shortest_distances = dijkstra(G, start_vertex)
 print("Найкоротші відстані від вершини", start_vertex, "до інших вершин:")
 for vertex, distance in shortest_distances.items():
     print(f"Від {start_vertex} до {vertex}: {distance}")
+
+num_nodes = G.number_of_nodes()
+num_edges = G.number_of_edges()
+node_degrees = dict(G.degree())
+
+print("Основні характеристики графа:")
+print("Кількість вершин:", num_nodes)
+print("Кількість ребер:", num_edges)
+print("Ступінь кожної вершини:", node_degrees)
